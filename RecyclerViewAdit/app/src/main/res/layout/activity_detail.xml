@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="DetailActivity">
+
+    //Membuat TextView nama hewan
+
+    <TextView
+        android:id="@+id/tvNama"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nama"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    //Menampilkan gambar
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvNama"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="35dp"
+        android:src="@mipmap/ic_launcher" />
+
+    //Membuat TextView klasifikasi hewan
+
+    <TextView
+        android:id="@+id/tvKlasifikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Klasifikasi"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    //Membuat TextView makanan
+
+    <TextView
+        android:id="@+id/tvMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKlasifikasi"
+        android:text="Makanan"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    //Membuat TextView deskripsi
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMakanan"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Deskripsi"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</RelativeLayout>
