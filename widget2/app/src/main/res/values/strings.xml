@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">selection widget</string>
+    <string-array name="Vertebrata">
+        <item>Amphibi</item>
+        <item>Reptile</item>
+        <item>Mamalia</item>
+        <item>Pisces</item>
+        <item>Aves</item>
+    </string-array>
+</resources>
